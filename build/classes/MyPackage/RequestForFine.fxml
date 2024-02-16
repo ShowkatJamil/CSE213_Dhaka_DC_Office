@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="requestForFineAnchorPane" prefHeight="437.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="MyPackage.RequestForFineController">
+   <children>
+      <Label layoutX="40.0" layoutY="32.0" text="Request District Magistrate for Fine">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="khatianTextField" layoutX="300.0" layoutY="100.0" prefHeight="25.0" prefWidth="169.0" />
+      <Label layoutX="94.0" layoutY="104.0" text="Enter Khatian Number:" />
+      <TextField fx:id="possessorTextField" layoutX="300.0" layoutY="138.0" prefHeight="25.0" prefWidth="169.0" />
+      <Label layoutX="94.0" layoutY="142.0" text="Enter Present Possessor:" />
+      <TextField fx:id="dueTextField" layoutX="300.0" layoutY="175.0" prefHeight="25.0" prefWidth="169.0" />
+      <Label layoutX="94.0" layoutY="179.0" text="Enter Due Amount:" />
+      <Button layoutX="397.0" layoutY="238.0" mnemonicParsing="false" onAction="#sendRequestsButtonOnClick" prefHeight="42.0" prefWidth="120.0" text="Send Request" />
+      <Button layoutX="75.0" layoutY="238.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnClick" prefHeight="42.0" prefWidth="120.0" text="Back to Dashboard" />
+      <Button layoutX="232.0" layoutY="238.0" mnemonicParsing="false" onAction="#viewSentRequestsButtonOnClick" prefHeight="42.0" prefWidth="128.0" text="View Sent Requests" />
+      <TextArea fx:id="viewReqestsTextArea" layoutX="65.0" layoutY="311.0" prefHeight="90.0" prefWidth="455.0" />
+   </children>
+</AnchorPane>

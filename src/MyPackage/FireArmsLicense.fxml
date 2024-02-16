@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="600.0" style="-fx-border-color: cyan;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPackage.FireArmsLicenseController">
+   <children>
+      <TextField layoutX="48.0" layoutY="68.0" promptText="Applicant's Name:" />
+      <TextField layoutX="48.0" layoutY="127.0" promptText="Father's Name:" />
+      <TextField layoutX="226.0" layoutY="127.0" promptText="Mother's Name:" />
+      <TextField layoutX="226.0" layoutY="68.0" promptText="Applicant's Age:" />
+      <TextField layoutX="399.0" layoutY="186.0" promptText="Applicant's Yearly Income:" />
+      <TextField layoutX="399.0" layoutY="68.0" promptText="Applicant's Birthyear:" />
+      <TextField layoutX="399.0" layoutY="127.0" prefHeight="25.0" prefWidth="167.0" promptText="Applicant's Present Address:" />
+      <TextField layoutX="48.0" layoutY="186.0" promptText="Occupation:" />
+      <TextField layoutX="226.0" layoutY="186.0" promptText="Nationality:" />
+      <TextField layoutX="48.0" layoutY="256.0" promptText="Applicant's Tax Amount:" />
+      <TextField layoutX="232.0" layoutY="310.0" prefHeight="25.0" prefWidth="241.0" />
+      <TextField layoutX="226.0" layoutY="256.0" promptText="Station Name:" />
+      <Label layoutX="48.0" layoutY="367.0" text="Is Applicant a Government Employee:" />
+      <RadioButton fx:id="radioButtonYes" layoutX="277.0" layoutY="367.0" mnemonicParsing="false" text="YES">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgconfirmation" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonNo" layoutX="353.0" layoutY="367.0" mnemonicParsing="false" text="No" toggleGroup="$tgconfirmation" />
+      <Label layoutX="48.0" layoutY="406.0" text="If Applicant is Govt. Employee, Salary:" />
+      <TextField layoutX="278.0" layoutY="402.0" />
+      <Label layoutX="48.0" layoutY="451.0" text="Does Applicant have any Previous Licences:" />
+      <RadioButton fx:id="radioButtonYesforPreviousLicences" layoutX="299.0" layoutY="451.0" mnemonicParsing="false" text="YES">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgconfirmation1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioButtonNoforPreviousLicences" layoutX="380.0" layoutY="451.0" mnemonicParsing="false" text="No" toggleGroup="$tgconfirmation1" />
+      <Label layoutX="50.0" layoutY="314.0" text="Why The License is needed:" />
+      <Label layoutX="48.0" layoutY="489.0" text="Is the previous license cancelled? If yes, Reason? " />
+      <TextField layoutX="307.0" layoutY="485.0" prefHeight="25.0" prefWidth="241.0" />
+      <Label layoutX="50.0" layoutY="527.0" text="Applicant previous license Type:" />
+      <TextField layoutX="235.0" layoutY="532.0" prefHeight="25.0" prefWidth="211.0" />
+      <Label layoutX="42.0" layoutY="23.0" text="Please Fill Up the Following Textfields">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="399.0" layoutY="592.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" style="-fx-border-color: cyan;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="514.0" layoutY="592.0" mnemonicParsing="false" onAction="#submitButtonOnClick" style="-fx-border-color: cyan;" text="Submit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="45.0" layoutY="592.0" mnemonicParsing="false" onAction="#goToPreviousPageButtonOnClick" style="-fx-border-color: cyan;" text="Go to Previous Page:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

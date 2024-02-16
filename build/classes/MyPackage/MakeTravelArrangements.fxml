@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPackage.MakeTravelArrangementsController">
+   <children>
+      <Label layoutX="91.0" layoutY="50.0" prefHeight="25.0" prefWidth="168.0" text="Travel Arrangements">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="87.0" text="Mode of Transport: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="modeOfTransportComboBox" layoutX="261.0" layoutY="87.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="154.0" layoutY="129.0" text="Start From:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="startFromRoadNoTextField" layoutX="261.0" layoutY="129.0" prefHeight="25.0" prefWidth="78.0" promptText="Road No" />
+      <TextField fx:id="startFromAreaTextField" layoutX="355.0" layoutY="129.0" prefHeight="25.0" prefWidth="78.0" promptText="Area" />
+      <TextField fx:id="startFromCityTextField" layoutX="454.0" layoutY="129.0" prefHeight="25.0" prefWidth="78.0" promptText="City" />
+      <Label layoutX="210.0" layoutY="175.0" text="To:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="toRoadNoTextField" layoutX="261.0" layoutY="175.0" prefHeight="25.0" prefWidth="78.0" promptText="Road No" />
+      <TextField fx:id="toAreaTextField" layoutX="355.0" layoutY="175.0" prefHeight="25.0" prefWidth="78.0" promptText="Area" />
+      <TextField fx:id="toCityTextField" layoutX="454.0" layoutY="175.0" prefHeight="25.0" prefWidth="78.0" promptText="City" />
+      <Label layoutX="69.0" layoutY="218.0" text="Select Service Provider:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="serviceProviderComboBox" layoutX="261.0" layoutY="218.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="131.0" layoutY="260.0" text="Total Expense:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="79.0" layoutY="317.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" text="Go Back ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="totalExpenseLabel" layoutX="261.0" layoutY="260.0" prefHeight="25.0" prefWidth="113.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="464.0" layoutY="317.0" mnemonicParsing="false" onAction="#confirmButtonOnClick" text="Confirm">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

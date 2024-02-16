@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPackage.AdministrativeAssistantDashboardController">
+   <children>
+      <AnchorPane prefHeight="503.0" prefWidth="217.0" style="-fx-background-color: lightsteelblue;">
+         <children>
+            <Button layoutX="16.0" layoutY="103.0" mnemonicParsing="false" onAction="#sendMeetingNoticeButtonOnClick" prefHeight="30.0" prefWidth="186.0" text="Send Meeting Notice">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="154.0" mnemonicParsing="false" onAction="#respondToRequestsButtonOnClick" prefHeight="30.0" prefWidth="186.0" text="Respond to Requests">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="206.0" mnemonicParsing="false" onAction="#makeTravelArrangementsButtonOnClick" prefHeight="30.0" prefWidth="186.0" text="Make Travel Arrangements">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="255.0" mnemonicParsing="false" onAction="#checkOfficeSuppliesButtonOnClick" prefHeight="30.0" prefWidth="186.0" text="Check Office Supplies">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="307.0" mnemonicParsing="false" onAction="#createOrUpdateButtonOnClick" prefHeight="30.0" prefWidth="186.0" text="Create/Update Report File">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="358.0" mnemonicParsing="false" onAction="#promptForFeedbackButtonOnClick" prefHeight="30.0" prefWidth="186.0" text="Prompt for Feedback">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="75.0" layoutY="440.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" text="Log Out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="255.0" layoutY="40.0" prefHeight="30.0" prefWidth="290.0" text="Administrative Assistant">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="userPromptMessageTextArea" disable="true" editable="false" layoutX="582.0" layoutY="-1.0" prefHeight="503.0" prefWidth="217.0" promptText="No pending prompt request from users" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="324.0" layoutY="450.0" mnemonicParsing="false" onAction="#createNewUserButtonOnClick" prefHeight="25.0" prefWidth="140.0" text="Create New User">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="244.0" layoutY="332.0" prefHeight="35.0" prefWidth="150.0" text="User Designation:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userDesignationComboBox" layoutX="405.0" layoutY="337.0" prefWidth="150.0" />
+      <Label layoutX="244.0" layoutY="385.0" prefHeight="35.0" prefWidth="150.0" text="Verfication Code:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="255.0" layoutY="83.0" prefHeight="25.0" prefWidth="290.0" />
+      <TextField fx:id="verificationCodeTextField" layoutX="405.0" layoutY="390.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="244.0" layoutY="126.0" prefHeight="35.0" prefWidth="150.0" text="User ID:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userIDTextField" layoutX="405.0" layoutY="131.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="244.0" layoutY="172.0" prefHeight="35.0" prefWidth="150.0" text="User Name:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="405.0" layoutY="177.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="244.0" layoutY="207.0" prefHeight="35.0" prefWidth="150.0" text="User date of birth:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="251.0" prefHeight="35.0" prefWidth="150.0" text="User date of joining:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="userDOBDatePicker" layoutX="405.0" layoutY="212.0" prefHeight="25.0" prefWidth="150.0" />
+      <DatePicker fx:id="userDOJDatePicker" layoutX="405.0" layoutY="256.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="245.0" layoutY="297.0" prefHeight="35.0" prefWidth="150.0" text="User Email:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userEmailTextField" layoutX="406.0" layoutY="302.0" prefHeight="25.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

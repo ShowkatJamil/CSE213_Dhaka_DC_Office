@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="archiveKhatiansAnchorPane" prefHeight="414.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPackage.ArchiveKhatiansController">
+   <children>
+      <Label layoutX="41.0" layoutY="36.0" text="Archive Khatian">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="archiveKhatianTableView" layoutX="48.0" layoutY="89.0" prefHeight="236.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="plotColuimn" editable="false" prefWidth="73.0" text="Plot No." />
+          <TableColumn fx:id="khatianColuimn" editable="false" prefWidth="82.0" text="Khatian No." />
+            <TableColumn fx:id="possessorColuimn" editable="false" prefWidth="106.0" text="Present Possessor" />
+            <TableColumn fx:id="districtColuimn" editable="false" prefWidth="72.0" text="District" />
+            <TableColumn fx:id="upazillaColuimn" editable="false" prefWidth="73.0" text="Upazilla" />
+            <TableColumn fx:id="mouzaColumn" editable="false" prefWidth="67.0" text="Mouza" />
+            <TableColumn fx:id="sizeColumn" editable="false" prefWidth="79.0" text="Size (Sq. Ft)" />
+            <TableColumn fx:id="valueColumn" editable="false" prefWidth="79.0" text="Value (Tk)" />
+        </columns>
+      </TableView>
+      <Button layoutX="505.0" layoutY="347.0" mnemonicParsing="false" onAction="#archiveButtonOnClick" prefHeight="43.0" prefWidth="118.0" text="Archive" />
+      <Button layoutX="106.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnClick" prefHeight="43.0" prefWidth="118.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

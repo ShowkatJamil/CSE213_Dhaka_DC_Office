@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="landRecordsBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPackage.LandRecordsController">
+   <center>
+      <AnchorPane prefHeight="455.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="36.0" text="Add New Record">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="plotTextField" layoutX="42.0" layoutY="98.0" promptText="Enter Plot No." />
+            <TextField fx:id="khatianTextField" layoutX="42.0" layoutY="138.0" promptText="Enter Khatian no." />
+            <TextField fx:id="presentPossessorTextField" layoutX="213.0" layoutY="98.0" promptText="Enter Present Possessor" />
+            <TextField fx:id="districtTextField" layoutX="213.0" layoutY="138.0" promptText="Enter District" />
+            <TextField fx:id="upazillaTextField" layoutX="383.0" layoutY="98.0" promptText="Enter Upazilla" />
+            <TextField fx:id="mouzaTextField" layoutX="383.0" layoutY="138.0" promptText="Enter Mouza" />
+            <TextField fx:id="valueTextField" layoutX="553.0" layoutY="98.0" promptText="Enter Value in Taka" />
+            <TextField fx:id="sizeTextField" layoutX="553.0" layoutY="138.0" promptText="Enter Size in sq. ft." />
+            <Button layoutX="277.0" layoutY="189.0" mnemonicParsing="false" onAction="#addRecordButtonOnClick" prefHeight="40.0" prefWidth="150.0" text="Add Record" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="388.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="89.0" layoutY="327.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnClick" prefHeight="40.0" prefWidth="150.0" text="Back to Dashboard" />
+            <Button layoutX="482.0" layoutY="327.0" mnemonicParsing="false" onAction="#deleteRecordsButttonOnClick" prefHeight="40.0" prefWidth="150.0" text="Delete Record(s)" />
+            <Label layoutX="35.0" layoutY="-2.0" text="Land Records">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="landTableView" editable="true" layoutX="42.0" layoutY="52.0" prefHeight="260.0" prefWidth="637.0">
+               <columns>
+                  <TableColumn fx:id="plotNoColumn" prefWidth="91.0" text="Plot (dag) No." />
+                  <TableColumn fx:id="khatianNoColumn" prefWidth="88.0" text="Khatian No." />
+                  <TableColumn fx:id="possessorIdColumn" prefWidth="106.0" text="Present Possessor" />
+                  <TableColumn fx:id="districtColumn" prefWidth="65.0" text="District" />
+                  <TableColumn fx:id="upazillaColumn" prefWidth="70.0" text="Upazilla" />
+                  <TableColumn fx:id="mouzaColumn" prefWidth="54.0" text="Mouza" />
+                  <TableColumn fx:id="sizeColumn" prefWidth="78.0" text="Size (Sq. Ft)" />
+                  <TableColumn fx:id="valueColumn" minWidth="0.0" onEditCommit="#changeValueCellEvent" prefWidth="83.0" text="Value (Tk)" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

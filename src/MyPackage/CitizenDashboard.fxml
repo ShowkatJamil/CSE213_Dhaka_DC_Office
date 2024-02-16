@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="722.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="MyPackage.CitizenDashboardController">
+   <children>
+      <Label layoutX="77.0" layoutY="87.0" prefHeight="20.0" prefWidth="48.0" text="Name: " textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="87.0" prefHeight="20.0" prefWidth="59.0" text="User ID:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userTypeOutputLabel" layoutX="293.0" layoutY="37.0" prefHeight="20.0" prefWidth="75.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="citizenNameOutputLabel" layoutX="138.0" layoutY="87.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: off white;" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="citizenUserIdOutputLabel" layoutX="427.0" layoutY="87.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: off white;" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="119.0" layoutY="244.0" mnemonicParsing="false" onAction="#certifiedCopiesofPorchaOnClick" prefHeight="34.0" prefWidth="469.0" text="Certified Copies of Porcha">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="296.0" mnemonicParsing="false" onAction="#applyForFoodGrainLicenseOnClick" prefHeight="34.0" prefWidth="469.0" text="Apply for Food Grain License" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="346.0" mnemonicParsing="false" onAction="#applyForFirearmLicenseOnClick" prefHeight="34.0" prefWidth="469.0" text="Apply for Firearm License">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="392.0" mnemonicParsing="false" onAction="#complainAgainstIllegalActivitiesOnClick" prefHeight="34.0" prefWidth="469.0" text="Complaint against Illegal Activities">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="446.0" mnemonicParsing="false" onAction="#applyForTradeLicenseOnClick" prefHeight="34.0" prefWidth="469.0" text="Apply for Trade License">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="497.0" mnemonicParsing="false" onAction="#applyForVendorLicenseOnClick" prefHeight="34.0" prefWidth="469.0" text="Apply for Stamp Vendor License">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="548.0" mnemonicParsing="false" onAction="#viewAllExistingLawsOnClick" prefHeight="34.0" prefWidth="469.0" text="View All Exsiting laws in BD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="119.0" layoutY="188.0" mnemonicParsing="false" onAction="#complaintAgainstIllegalLandOccupationOnClick" prefHeight="34.0" prefWidth="469.0" text="Complaint Against Illegal Land Occupation" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="577.0" layoutY="37.0" mnemonicParsing="false" onAction="#logOutOnClick" prefHeight="34.0" prefWidth="97.0" text="Log Out" />
+   </children>
+</AnchorPane>
